@@ -1,0 +1,17 @@
+CREATE DATABASE megador;
+
+use megador;
+CREATE TABLE admin(
+	PASSWORD varchar(20)
+);
+
+CREATE TABLE product(
+	id int AUTO_INCREMENT PRIMARY key,
+    product_name varchar(30),
+    prix float,
+    datee date,
+    annuler int,
+    cadeau int
+);
+
+ALTER TABLE product ADD dateTime varchar(30);
